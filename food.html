@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Muslim Shop</title>
+
+
+	<!-- Font Awesome Icon -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Google font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Carattere&family=Edu+TAS+Beginner:wght@600&family=Margarine&family=Spirax&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<!-- Custom stlylesheet -->
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<style>
+
+	</style>
+
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+		<!-- TOP HEADER -->
+		<div id="top-header">
+			<div class="container">
+				<ul class="header-links">
+					<li><a href="#"><i class="fa fa-phone"></i> +88 01865078090</a></li>
+					<li><a href="#"> <i class="fa-regular fa-envelope"></i> muslimshopbd@email.com</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Dhaka, Bangladesh </a></li>
+
+					<li><a href="login.html" target="_blank"><i class="fa fa-user"></i> My Account</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /TOP HEADER -->
+
+		<!-- MAIN HEADER -->
+		<div id="header">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- LOGO -->
+					<div class="col-md-3">
+						<div class="header-logo">
+							<a href="index.html" class="logo">
+								<img src="./images/logo.png" alt="Logo of Muslim Shop " width="110px" height="100px">
+							</a>
+						</div>
+					</div>
+					<!-- /LOGO -->
+
+					<!-- SEARCH BAR -->
+					<div class="col-md-6">
+						<div class="header-search">
+							<form>
+								<select class="input-select" onchange="redirectToLink(this)">
+									<option value="0" selected="selected">All Categories</option>
+									<option value="1">Cloth</option>
+									<option value="2">Book</option>
+									<option value="3">Accecorises</option>
+									<option value="4">Food</option>
+								</select>
+								<input class="input" placeholder="Search here">
+								<button class="search-btn">Search</button>
+							</form>
+						</div>
+					</div>
+					<!-- /SEARCH BAR -->
+
+					<!-- ACCOUNT -->
+					<div class="col-md-3 clearfix">
+
+
+						<div class="header-ctn">
+							<!-- Wishlist -->
+
+							<div>
+								<a href="login.html">
+									<i class="fa fa-heart"></i>
+									<span>Your Wishlist</span>
+
+								</a>
+							</div>
+							<!-- /Wishlist -->
+							<!-- Cart -->
+							<div class="cart">
+
+								<a href="login.html"> <i class="fa-solid fa-cart-shopping"></i>
+									<span>Your Cart</span>
+								</a>
+
+								<!-- /Cart -->
+							</div>
+							<!-- Menu Toogle -->
+							<div class="menu-toggle" id="menu-icon">
+								<a href="#">
+									<i class="fa fa-bars"></i>
+									<span>Menu</span>
+								</a>
+							</div>
+							<!-- /Menu Toogle -->
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			<!-- /ACCOUNT -->
+		</div>
+		<!-- row -->
+		</div>
+		<!-- container -->
+		</div>
+		<!-- /MAIN HEADER -->
+	</header>
+	<!-- /HEADER -->
+ 
+	<!-- NAVIGATION -->
+	<nav id="navigation">
+		<!-- container -->
+		<div class="container">
+			<!-- responsive-nav -->
+			<div id="responsive-nav">
+				<!-- NAV -->
+				<ul class="main-nav">
+					
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="combo.html">Combo Offer</a></li>
+					<li><a href="#">
+						<select class="input-select" onchange="redirectToLink(this)">
+							<option value="0" selected="selected">All Categories</option>
+							<option value="1">Cloth</option>
+							<option value="2">Book</option>
+							<option value="3">Accecorises</option>
+							<option value="4">Food</option>
+						</select></a></li>
+					<li><a href="book.html">Book</a></li>
+					<li><a href="dress.html">Dress</a></li>
+					<li><a href="food.html">Food</a></li>
+					<li><a href="accesories.html">Accessories</a></li>
+				</ul>
+				<!-- /NAV nav navbar-nav -->
+			</div>
+			<!-- /responsive-nav -->
+		</div>
+		<!-- /container -->
+	</nav>
+	<!-- /NAVIGATION -->
+	
+
+
+
+
+
+
+
+
+
+
+	<!-- product -->
+
+	<div class="container">
+
+		<div class="category-title col-md-12"> Food </div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="./images/huny2.jpg" alt="Product Image">
+					<div class="card-body">
+						<h5 class="card-title">Product Name</h5>
+
+						<button class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> Add to Cart</button>
+						<button class="btn btn-secondary"> <i class="fas fa-heart"></i> Add wishlist</button>
+					</div>
+					<div class="card-footer">
+						<h4 class="product-price"> Price : $980.00 <del class="product-old-price">$990.00</del></h4>
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="./images/nut1.jpg" alt="Product Image">
+					<div class="card-body">
+						<h5 class="card-title">Product Name</h5>
+
+						<button class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> Add to Cart</button>
+						<button class="btn btn-secondary"> <i class="fas fa-heart"></i> Add wishlist</button>
+					</div>
+					<div class="card-footer">
+						<h4 class="product-price"> Price : $980.00 <del class="product-old-price">$990.00</del></h4>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="./images/nut2.jpg" alt="Product Image">
+					<div class="card-body">
+						<h5 class="card-title">Product Name</h5>
+
+						<button class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> Add to Cart</button>
+						<button class="btn btn-secondary"> <i class="fas fa-heart"></i> Add wishlist</button>
+					</div>
+					<div class="card-footer">
+						<h4 class="product-price"> Price : $980.00 <del class="product-old-price">$990.00</del></h4>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- /product -->
+
+
+	<!-- product -->
+
+	<div class="container">
+
+		<div class="category-title col-md-12">Date </div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="./images/date1.jpg" alt="Product Image">
+					<div class="card-body">
+						<h5 class="card-title">Product Name</h5>
+
+						<button class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> Add to Cart</button>
+						<button class="btn btn-secondary"> <i class="fas fa-heart"></i> Add wishlist</button>
+					</div>
+					<div class="card-footer">
+						<h4 class="product-price"> Price : $980.00 <del class="product-old-price">$990.00</del></h4>
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="./images/date2.jpg" alt="Product Image">
+					<div class="card-body">
+						<h5 class="card-title">Product Name</h5>
+
+						<button class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> Add to Cart</button>
+						<button class="btn btn-secondary"> <i class="fas fa-heart"></i> Add wishlist</button>
+					</div>
+					<div class="card-footer">
+						<h4 class="product-price"> Price : $980.00 <del class="product-old-price">$990.00</del></h4>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="./images/date3.jpg" alt="Product Image">
+					<div class="card-body">
+						<h5 class="card-title">Product Name</h5>
+
+						<button class="btn btn-primary"> <i class="fa fa-shopping-cart"></i> Add to Cart</button>
+						<button class="btn btn-secondary"> <i class="fas fa-heart"></i> Add wishlist</button>
+					</div>
+					<div class="card-footer">
+						<h4 class="product-price"> Price : $980.00 <del class="product-old-price">$990.00</del></h4>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- /product -->
+
+
+
+
+
+	<!-- FOOTER -->
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<!-- top footer -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">About Us</h3>
+							<p>We are Bangladeshi E-Commerce Company. We Supply Muslim's daily need Produck .</p>
+							<ul class="footer-links">
+								<li><a href="#"><i class="fa fa-map-marker"></i>Danmondi Road </a></li>
+								<li><a href="#"><i class="fa fa-phone"></i>+880 1865078090</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> email@email.com</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Categories</h3>
+							<ul class="footer-links">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="combo.html">Combo Offer</a></li>
+								<li><a href="book.html">Book</a></li>
+								<li><a href="dress.html">Dress</a></li>
+								<li><a href="food.html">Food</a></li>
+								<li><a href="accesories.html">Accessories</a></li>
+				
+							</ul>
+						</div>
+					</div>
+
+					<div class="clearfix visible-xs">
+						
+					</div>
+
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Information</h3>
+							<ul class="footer-links">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Orders and Returns</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-xs-6">
+						<div class="footer">
+							<h3 class="footer-title">Service</h3>
+							<ul class="footer-links">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="combo.html">Combo Offer</a></li>
+								<li><a href="book.html">Book</a></li>
+								<li><a href="dress.html">Dress</a></li>
+								<li><a href="food.html">Food</a></li>
+								<li><a href="accesories.html">Accessories</a></li>
+				
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /top footer -->
+
+		<!-- bottom footer -->
+		<div id="bottom-footer" class="section">
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12 text-center">
+						
+						<img style="margin-top: 20px" src="./images/payment.png" alt="" height="100px" width="300px">
+						<h1>Devoloper : </h1>
+						<span class="copyright">
+							&#169; <a target="_blank" href="https://www.facebook.com/naeem.cse.cou">Made By : <b> Najul Islam Naeem </b></a>
+							<br>
+							<p> ID : 12008010
+								<br>
+								Styding Computer Science and Engineering at Comilla Unieversity
+							</p>
+
+							<p><a href="mailto:csenajmulilamnaeem@gmail.com">Send email :
+									csenajmulilamnaeem@gmail.com</a></p>
+						</span>
+
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /bottom footer -->
+	</footer>
+	<!-- /FOOTER -->
+
+	<!-- jQuery Plugins -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	
+	<script src="script.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
